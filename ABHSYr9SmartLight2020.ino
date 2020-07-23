@@ -81,7 +81,8 @@ void setup() {
   //set callback that gets called when connecting to previous WiFi fails, and enters Access Point mode
   wm.setAPCallback(configModeCallback);
 
-  if (!wm.autoConnect("SmartLightABHS2020")) {
+//  if (!wm.autoConnect("SmartLightABHS2020")) {
+  if (!wm.autoConnect()) {
     Serial.println("failed to connect and hit timeout");
     //reset and try again, or maybe put it to deep sleep
     ESP.reset();
