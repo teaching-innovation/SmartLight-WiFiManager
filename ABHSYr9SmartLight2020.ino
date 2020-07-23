@@ -73,7 +73,7 @@ void setup() {
   
   WiFiManager wm;
   //reset settings - wipe credentials for testing
-  wm.resetSettings();
+  //wm.resetSettings();
 
   WiFiManagerParameter custom_text("<p> Go to http://smartlight.local when light turns blue</p>");
   wm.addParameter(&custom_text);
