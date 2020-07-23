@@ -1,16 +1,17 @@
 #define FASTLED_ALLOW_INTERRUPTS 0 //  https://github.com/FastLED/FastLED/issues/306#issuecomment-219868579
-#include "FastLED.h"
+
+#include "FastLED.h"          // by Daniel Garcia V 3.3.3
+#include <WiFiManager.h>          //by tzapu,tablatronix V 2.0.3  https://github.com/tzapu/WiFiManager
+
 #include <ESP8266WiFi.h>          //https://github.com/esp8266/Arduino
-#include <ESP8266mDNS.h>
-#include <WiFiClient.h>
-#include <DNSServer.h>
-#include <ESP8266WebServer.h>
-#include <WiFiManager.h>          //https://github.com/tzapu/WiFiManager
-//#include "LightPrograms.h"
+#include <ESP8266mDNS.h>          
+#include <WiFiClient.h>          
+#include <DNSServer.h>         
+#include <ESP8266WebServer.h>          
 
 #define CHIPSET    WS2812 // WS2811
 #define NUM_LEDS    9 //number of LEDS in strip
-#define DATA_PIN    D3
+#define DATA_PIN    D4
 struct CRGB leds[NUM_LEDS];
 #define COLOR_ORDER GRB //BRG
 
