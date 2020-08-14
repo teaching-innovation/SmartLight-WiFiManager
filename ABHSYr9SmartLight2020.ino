@@ -11,7 +11,7 @@
 
 #define CHIPSET    WS2812 // WS2811
 #define NUM_LEDS    9 //number of LEDS in strip
-#define DATA_PIN    D3
+#define DATA_PIN    D3  // this pin has been changed to D3. 
 struct CRGB leds[NUM_LEDS];
 #define COLOR_ORDER GRB //BRG
 
